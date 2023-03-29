@@ -11,7 +11,7 @@ def FinalPrint(filePosition, totalLines, emptyLines, linesWithZ, zCount, linesWi
 while work:
     userFilePosition = ""
 
-    userFilePosition = str(input("File name "))
+    userFilePosition = str(input("File "))
     file = userFilePosition
 
     f = open(file, "r")
@@ -93,7 +93,7 @@ while work:
 
         FinalPrint(userFilePosition, _totalLines, _emptyLines, _linesWithZ, _zCount, _linesWithAnd)
     else:
-        print("The file is empty")
+        print("Цей файл пустий ")
 
     q = ""
 
@@ -107,5 +107,4 @@ while work:
     if q == "NO":
         work = False
         break
-
 print("Program end")
