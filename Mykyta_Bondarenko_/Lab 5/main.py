@@ -1,3 +1,7 @@
 from num2words import num2words
 
-print(num2word(123))
+print("Hello")
+
+while True:
+    number = int(input("Enter your numbers: "))
+    print(num2words(number))
