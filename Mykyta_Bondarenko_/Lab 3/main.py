@@ -1,10 +1,9 @@
-def Print(_i, _j):
-    print(_i, "+", _j)
+def Sum(first, second):
+    if first + second == 10:
+        print(first, "+", second)
 
+m = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-nums = [1, 3, 3, 6, 9, 4]
-
-for i in nums:
-    for j in nums:
-        if i + j == 10:
-            print(i, j)
+for i in m:
+    for j in m:
+        Sum(i, j)
