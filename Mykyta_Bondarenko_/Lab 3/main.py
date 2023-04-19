@@ -1,9 +1,9 @@
-def Sum(first, second):
-    if first + second == 10:
-        print(first, "+", second)
+def Sum(num1, num2):
+    if num1 + num2 == 10:
+        print(num1, "+", num2)
 
-m = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+array = [2, 2, 8, 1, 4, 9, 3, 8, 2]
 
-for i in m:
-    for j in m:
+for i in array:
+    for j in array:
         Sum(i, j)
