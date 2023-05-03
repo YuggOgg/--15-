@@ -1,0 +1,12 @@
+while True:
+    file = open(input('File path: '), 'r')
+    count_lines = file.readlines()
+    empty_lines = [line for line in count_lines if line == '\n']
+    z_lines = [line for line in count_lines if 'z' in line]
+    count_z = len(z_lines)
+    count_z_lines = [line for line in count_lines for z in line if z == 'z']
+    and_lines = [line for line in count_lines]
+    count_and = sum('and' in line for line in and_lines)
+    print(f'Total amount of lines: {len(count_lines)}\n empty lines: {len(empty_lines)}')
+    print(f'Lines with "z": {count_z}')
+    print(f'Lines without "z": {len(count_z_lines)}\n Lines with "and": {count_and}')
